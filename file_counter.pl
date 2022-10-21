@@ -1,13 +1,13 @@
 #!/usr/bin/perl -w
 
-# create a list of all *.html files in
+# count all ".txt", ".doc", ".docx" , ".xls", ".xlsx", ".pl" , ".jpg" , ".ppt" , ".pptx" files in
 # the current directory
 my $dirname;
 my $count;
 my $count2;
 my @fileends;
 my $end;
-my$input;
+my $input;
 my $other_files;
 
 $dirname = 'C:\Users\stefans\Desktop';
