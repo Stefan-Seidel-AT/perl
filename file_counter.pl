@@ -1,7 +1,14 @@
 #!/usr/bin/perl -w
 
-# count all ".txt", ".doc", ".docx" , ".xls", ".xlsx", ".pl" , ".jpg" , ".ppt" , ".pptx" files in
-# the current directory
+# This program counts files/directories in the current directory where the program is stored and executed. 
+# Then it prints the sum of it to the command line
+
+# import modules
+use strict;
+use warnings;
+use Cwd qw(cwd);
+
+# declarations
 my $dirname;
 my $count;
 my $count2;
@@ -10,7 +17,8 @@ my $end;
 my $input;
 my $other_files;
 
-$dirname = 'C:\Users\stefans\Desktop';
+# get current directory
+$dirname = cwd;
 
 @fileends = ( "txt", "doc", "docx" , "xls", "xlsx", "pl" , "jpg" , "ppt" , "pptx" , ".*");
 
